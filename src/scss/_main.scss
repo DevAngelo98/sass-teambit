@@ -1,5 +1,7 @@
 
-
+main {
+  color: $text-color;
+}
 #understand{
   padding: 100px 0;
 
@@ -30,5 +32,28 @@
   @include flex-start;
   p{
     margin: 0 15px;
+  }
+}
+
+#tradprocess{
+  background-color: $bg-section;
+  padding: 60px 0;
+  .row{
+    @include flex-center;
+    *{
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  .img_col img{
+    @include imgsec;
+  }
+  .img_center img{
+    max-width: 280px;
+  }
+  hr {
+    width: 100%;
+    margin-top: 20px;
   }
 }

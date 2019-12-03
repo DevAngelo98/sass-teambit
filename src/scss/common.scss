@@ -26,3 +26,9 @@ p{
     align-items: center;
   }
 }
+
+@mixin imgsec {
+  max-width: 140px;
+  max-height: 105px;
+  margin: 20px auto;
+}

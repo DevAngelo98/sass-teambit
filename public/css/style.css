@@ -25,6 +25,10 @@ header hr {
   background-color: white !important;
 }
 
+main {
+  color: #58402c !important;
+}
+
 #understand {
   padding: 100px 0;
 }
@@ -71,5 +75,40 @@ header hr {
 
 .signup p {
   margin: 0 15px;
+}
+
+#tradprocess {
+  background-color: #FFE7D2 !important;
+  padding: 60px 0;
+}
+
+#tradprocess .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+#tradprocess .row * {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#tradprocess .img_col img {
+  max-width: 140px;
+  max-height: 105px;
+  margin: 20px auto;
+}
+
+#tradprocess .img_center img {
+  max-width: 280px;
+}
+
+#tradprocess hr {
+  width: 100%;
+  margin-top: 20px;
 }
 
