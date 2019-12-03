@@ -32,3 +32,22 @@ p{
   max-height: 105px;
   margin: 20px auto;
 }
+
+@mixin xl-top {
+  @media (min-width: 1200px){
+    width: 50%;
+  }
+}
+
+@mixin lg-down {
+  @media (max-width: 992px){
+    flex-direction: column-reverse;
+  }
+}
+
+@mixin lg-down-text {
+  @media (max-width: 992px){
+    justify-content: center;
+    text-align: center;
+  }
+}
