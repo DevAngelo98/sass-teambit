@@ -1,0 +1,34 @@
+
+
+#understand{
+  padding: 100px 0;
+
+  #loginemail {
+    @include flex-start;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    svg{
+      width: 1rem;
+      margin-left: 3px;
+      align-self: flex-end;
+    }
+  
+  }
+
+  .left{
+    h2,h6{
+    margin-bottom: 30px;
+    }
+  }
+  .left,.right{
+    @include xl-down;
+  }
+}
+
+.signup{
+  @include flex-start;
+  p{
+    margin: 0 15px;
+  }
+}
