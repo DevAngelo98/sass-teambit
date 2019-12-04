@@ -2,6 +2,7 @@
 main {
   color: $text-color;
 }
+
 #understand{
   padding: 100px 0;
 
@@ -18,9 +19,13 @@ main {
 
 .loginemail {
   @include flex-start;
+  @include lg-down-text;
   margin-top: 10px;
   margin-bottom: 25px;
-  @include lg-down-text;
+  &:hover{
+    cursor: pointer;
+    color: #30488f;
+  }
   svg{
     width: 1rem;
     margin-left: 3px;
@@ -32,6 +37,21 @@ main {
   @include flex-start;
   p{
     margin: 0 15px;
+  }
+  button{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: .875rem;
+    background: #30488f;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    &:hover{
+      background: #233569;
+      cursor: pointer;
+    }
   }
 }
 
@@ -88,3 +108,41 @@ main {
   }
 }
 
+#started{
+  background-color: $bg-section;
+  padding: 80px 0;
+  .my_cont{
+    @include flex-column;
+    h3,.team{
+      margin-bottom: 35px;
+    }
+  }
+  .team{
+    background-color: white;
+    padding: 25px 20px;
+    max-width: 630px;
+    position: relative;
+    svg{
+      width: 35px;
+      position: absolute;
+      top: -17px;
+      left: 0;  
+    }
+    .founders{
+      display: flex;
+      align-items: center;
+      .profile{
+        margin-right: 15px;
+        img{
+          max-width: 38px;
+          margin-right: 10px;
+        }
+      }
+      .text-profile{
+        p:first-child{
+          color:#30488f;
+        }
+      }
+    }
+  }
+}

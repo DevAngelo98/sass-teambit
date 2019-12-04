@@ -19,6 +19,13 @@ p{
   align-items: center;
 }
 
+@mixin flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @mixin xl-down {
   @media (max-width: 1200px){
     display: flex;
@@ -49,5 +56,11 @@ p{
   @media (max-width: 992px){
     justify-content: center;
     text-align: center;
+  }
+}
+
+@mixin lg-down-size {
+  @media (max-width: 992px){
+    width: 50%;
   }
 }
