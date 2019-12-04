@@ -1,0 +1,37 @@
+footer{
+  color: $text-color;
+  padding: 60px 0;
+  .help-logo{
+    @include flex-center;
+    align-items: end;
+    margin-bottom: 30px;
+    img{
+      min-width: 50px;
+      margin-right: 30px;
+    }
+  }
+  .ul_footer{
+    @include flex-center;
+    @include lg-down-pos;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    .my_ul-size{
+      @include lg-down-size;
+      li{
+        margin-bottom: 12px;
+        line-height: 30px;
+        &:hover{
+          color: #30488f;
+          cursor: pointer;
+        }
+      }
+      .title_ul{
+        cursor: text;
+        &:hover{
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

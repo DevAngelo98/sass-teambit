@@ -17,6 +17,25 @@ p {
   margin-right: 20px;
 }
 
+.my_ul-nav .my_btn {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #30488f;
+  background: #fff;
+  color: #30488f !important;
+}
+
+.my_ul-nav .my_btn:hover {
+  background: #30488f;
+  color: white !important;
+}
+
+.my_ul-nav .my_btn svg {
+  margin-right: 8px;
+}
+
 header hr {
   margin: 0 16px;
 }
@@ -91,6 +110,10 @@ main {
 }
 
 .signup button {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
   height: 35px;
   line-height: 35px;
   padding: 0 20px;
@@ -105,6 +128,10 @@ main {
 .signup button:hover {
   background: #233569;
   cursor: pointer;
+}
+
+.signup button svg {
+  margin-right: 8px;
 }
 
 #tradprocess {
@@ -241,5 +268,73 @@ main {
 
 #started .team .founders .text-profile p:first-child {
   color: #30488f;
+}
+
+footer {
+  color: #58402c !important;
+  padding: 60px 0;
+}
+
+footer .help-logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+          align-items: end;
+  margin-bottom: 30px;
+}
+
+footer .help-logo img {
+  min-width: 50px;
+  margin-right: 30px;
+}
+
+footer .ul_footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  footer .ul_footer {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .ul_footer .my_ul-size {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+footer .ul_footer .my_ul-size li {
+  margin-bottom: 12px;
+  line-height: 30px;
+}
+
+footer .ul_footer .my_ul-size li:hover {
+  color: #30488f;
+  cursor: pointer;
+}
+
+footer .ul_footer .my_ul-size .title_ul {
+  cursor: text;
+}
+
+footer .ul_footer .my_ul-size .title_ul:hover {
+  color: #58402c !important;
 }
 

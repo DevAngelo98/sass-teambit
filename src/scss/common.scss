@@ -62,5 +62,12 @@ p{
 @mixin lg-down-size {
   @media (max-width: 992px){
     width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+@mixin lg-down-pos {
+  @media (max-width: 992px){
+    justify-content: flex-start;
   }
 }

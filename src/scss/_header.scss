@@ -4,6 +4,19 @@
   li{
     margin-right: 20px;
   }
+  .my_btn{
+    @include flex-start;
+    border: 1px solid #30488f;
+    background: #fff;
+    color: #30488f !important;
+    &:hover{
+      background: #30488f;
+      color: white!important;
+    }
+    svg{
+      margin-right: 8px;
+    }
+  }
 }
 
 header hr {
